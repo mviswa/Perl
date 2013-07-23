@@ -8,7 +8,7 @@ my @tbsp= grep /\//,`db2 "select RTRIM(substr(A.TBSP_NAME,1,30)),A.TBSP_FREE_PAG
 
 
 open (MYFILE, '>tbsbexec.db2');
-print MYFILE "connect to gsrtc;\n";
+print MYFILE "connect to db-name;\n";
 foreach (@tbsp){
 chomp;
 s/^\s*//;
