@@ -3,6 +3,7 @@ Store the database names you need to take a backup in dbbackup.config
 ex : 
 
 database1
+
 database2
 ...
 
