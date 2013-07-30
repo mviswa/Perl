@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 
-`db2 "connect to db-name"`;
+`db2 "connect to awdrt"`;
 my @tbsp= grep /\//,`db2 "select RTRIM(substr(A.TBSP_NAME,1,30)),A.TBSP_FREE_PAGES as FREE,B.CONTAINER_NAME as CON_PATH from SYSIBMADM.TBSP_UTILIZATION A ,SYSIBMADM.CONTAINER_UTILIZATION B where A.TBSP_ID=B.TBSP_ID and A.TBSP_AUTO_RESIZE_ENABLED=0 with UR"`;
 
 
