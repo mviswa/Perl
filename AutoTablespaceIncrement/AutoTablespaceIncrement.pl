@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 use strict;
 use warnings;
+use diagnostics;
 
 
 `db2 "connect to awdrt"`;
